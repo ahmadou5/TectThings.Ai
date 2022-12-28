@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "nodemon server",
-    "server": "nodemon server"
+    "server": "npm start server"
   },
   "keywords": [],
   "author": "",
