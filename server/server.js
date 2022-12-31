@@ -12,6 +12,9 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
+const port = process.env.PORT || 3000;
+
+
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -45,4 +48,4 @@ app.post('/', async (req, res) => {
 })
 
 
-app.listen(3000,() => console.log('server is running on port http://localhost:3000'));
+app.listen(port,() => console.log('server is running on port http://localhost:3000'));
