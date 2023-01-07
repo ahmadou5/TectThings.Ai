@@ -12,7 +12,7 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 10000;
 
 
 const app = express();
